@@ -20,8 +20,8 @@ The image from the previous thresholding process had a lot of salt-and-pepper no
 # Segment the image into regions
 
 On the cleaned up binary frame received from the previous process, we iterated through the frame to find the seed pixel. We used depth-first search to traverse neighboring pixels to find foreground pixels that haven't been assigned a region id and them recursively mapped all the foreground pixels to their respective regions. We found the largest region from a window that captures the central 80% of the frame that gave us the object along with its region id.
-![img1](https://user-images.githubusercontent.com/44782426/158462568-c952f364-ba3a-4bc2-![growing](https://user-images.githubusercontent.com/44782426/158462579-c1e3c677-cf4c-4eba-a755-603f70f417b9.png)
-9781-e90b90f42261.png)
+![growing](https://user-images.githubusercontent.com/44782426/158466551-9a648306-f064-49de-acd9-55c93a292c9e.png)
+
 
 # Compute features for each major region
 
